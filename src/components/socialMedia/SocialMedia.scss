@@ -2,29 +2,27 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .icon-button {
-  margin-bottom: 10px;
+  margin: 5px;
 }
 
 .icon-button i {
-  color: $textColorDark;
-  border-radius: 2.6rem;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.3rem;
   height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
   transition: 0.2s ease-in;
 }
 
@@ -40,8 +38,34 @@
   background-color: $github;
 }
 
-.gitlab i {
-  background-color: $gitlab;
+.bluesky-icon-container {
+  background-color: $bluesky;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex
+;
+  cursor: pointer;
+  display: inline-flex
+;
+  
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  transition: 0.2s ease-in;
+  transform: translateY(3px);
+}
+
+.bluesky-icon-container svg {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(0px);
 }
 
 .google i {
@@ -71,7 +95,7 @@
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
-.gitlab i:hover,
+.bluesky i:hover,
 .github i:hover,
 .linkedin i:hover,
 .facebook i:hover,

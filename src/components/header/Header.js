@@ -42,41 +42,41 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
-            <li>
-              <a href="#skills">Skills</a>
+            <li data-number="01.">
+              <a href="#skills">About</a>
             </li>
           )}
           {viewExperience && (
-            <li>
-              <a href="#experience">Work Experiences</a>
+            <li data-number="02.">
+              <a href="#experience">Experience</a>
             </li>
           )}
           {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
+            <li data-number="03.">
+              <a href="#opensource">Projects</a>
             </li>
           )}
           {viewAchievement && (
-            <li>
-              <a href="#achievements">Achievements</a>
+            <li data-number="04.">
+              <a href="#achievements">Contact</a>
             </li>
           )}
           {viewBlog && (
-            <li>
+            <li data-number="05.">
               <a href="#blogs">Blogs</a>
             </li>
           )}
           {viewTalks && (
-            <li>
+            <li data-number="06.">
               <a href="#talks">Talks</a>
             </li>
           )}
           {viewResume && (
-            <li>
+            <li data-number="07.">
               <a href="#resume">Resume</a>
             </li>
           )}
-          <li>
+          <li data-number="08.">
             <a href="#contact">Contact Me</a>
           </li>
           <li>
