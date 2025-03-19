@@ -118,17 +118,103 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: false, // Set it to true to show Proficiency Section // Changed to false
   experience: [
-    // Removed experience
+    {
+      Stack: "AutoCAD", // Changed stack
+      //progressPercentage: "90%" // Changed percentage
+    },
+    {
+      Stack: "Matlab", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "C & C++", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Python", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Markdown & YAML & JSON", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "GitHub", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Photoshop", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Lightroom", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Blender", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "ROS Melodic & ROS2 Humble", // Changed stack
+      progressPercentage: "85%" // Changed percentage
+    },
+    {
+      Stack: "Webots", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    },
+    {
+      Stack: "Arduino IDE", // Changed stack
+      //progressPercentage: "80%" // Changed percentage
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
 
+
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section // Changed to false
+  display: true, //Set it to true to show work Experiences Section
   experience: [
-    // Removed experience
+    {
+      role: "Intern CAD Drafter",
+      company: "University of Michigan - Information Technology Services",
+      companylogo: require("./assets/images/umits.png"),
+      date: "Summer 2019",
+      desc: "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Description Bullets Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Description Bullets Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      role: "Founder and Adminstrator",
+      company: "D's Homework Help",
+      companylogo: require("./assets/images/dhwh.png"),
+      date: "June 14, 2018 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "FIRST Robotics Mentor",
+      company: "Cyber Cougars 6089",
+      companylogo: require("./assets/images/cybercougars.jpg"),
+      date: "March 2022 – April 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Undergratuate Student Researcher",
+      company: "D's Homework Help",
+      companylogo: require("./assets/images/sure.png"),
+      date: "Summer 2024",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Chief Engineer/Project Manager",
+      company: "Intelligent Systems Club",
+      companylogo: require("./assets/images/isclogo.png"),
+      date: "September 2021 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
   ]
 };
 
@@ -143,8 +229,38 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects", // Changed title to "Projects"
+  title: "Featured Projects", // Changed title to "Projects"
   subtitle: "Highlighted Robotics Projects", // Changed subtitle
+  projects: [
+    {
+      image: require("./assets/images/isclogo.png"), // Changed image
+      projectName: "Robotics Project Phoenix", // Changed project name
+      projectDesc: "Autonomous go-kart project using ROS2. Responsible for overall project management and technical direction.", // Changed description
+      footerLink: [
+        {
+          name: "View Project", // Changed name
+          url: "[Link to project, e.g., GitHub repo or video demo]" // Changed URL
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/arm.jpg"), // Changed image
+      projectName: "Arm Manipulator Project", // Changed project name
+      projectDesc: "Designed and built an arm manipulator using ROS2, showcasing expertise in robotics and software integration.", // Changed description
+      footerLink: [
+        {
+          name: "View Project", // Changed name
+          url: "[Link to project, e.g., GitHub repo or video demo]" // Changed URL
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+const smallProjects = {
+  title: "Other Cool Projects", // Changed title to "Projects"
+  subtitle: "Non-robotics projects", // Changed subtitle
   projects: [
     {
       image: require("./assets/images/isclogo.png"), // Changed image
@@ -177,14 +293,14 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji(""), // Removed title
+  title: emoji("Achievements"), 
   subtitle:
     "", // Removed subtitle
 
   achievementsCards: [
     // Removed achievements
   ],
-  display: false // Set false to hide this section, defaults to true // Changed to false
+  display: true // Set false to hide this section, defaults to true // Changed to false
 };
 
 // Blogs Section
@@ -264,6 +380,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  smallProjects,
   achievementSection,
   blogSection,
   talkSection,
